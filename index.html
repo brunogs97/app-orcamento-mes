@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/c5ed4752ba.js" crossorigin="anonymous"></script>
+    <title>App Orçamento do Mês</title>
+</head>
+<body>
+    <main id="mainContent">
+        <header class="headerContent">
+            <h1 class="contentTitle">Orçamento do Mês</h1>
+            <img src="./img/foto-logo.jpg" class="img" alt="Foto sobre investimentos">
+        </header>
+        <div class="content">
+            <form id="formContent">
+                <fieldset>
+                    <label for="inDescription">Descrição da Conta: </label><br>
+                    <input type="text" id="inDescription" class="inputDataField" required placeholder="Ex.: Internet"><br>
+                    <label for="inValue">Valor a pagar R$: </label><br>
+                    <input type="number" id="inValue" class="inputDataField" min="0" step="0.01" required placeholder="R$ 100.00"><br>
+                    <input type="submit" class="registerButton" value="Registrar Contas">
+                </fieldset>
+            </form>
+        </div>
+
+        <!--LISTA DE CONTAS E VALORES-->
+        <div class="budgetList">
+            <pre id="separateItems"></pre>
+            <pre id="budgetAndResultList"></pre>  
+        </div>
+    </main>
+
+    <div class="balanceOfTheMonth">
+        <span class="titleBalanceOfTheMonth">Balanço do Mês</span>
+        <form id="formBalanceOfTheMonth">
+            <label for="monthlySalary" class="dataEntryField">Ganhos do Mês:</label>
+            <input type="number" id="monthlySalary" class="dataEntryField salary" min="0" step="0.01" placeholder="Ganhos do mês">
+            <label for="monthlyExpenses" class="dataEntryField">Gastos do Mês:</label>
+            <input type="number" id="monthlyExpenses" class="dataEntryField output" min="0" step="0.01" placeholder="Gastos do mês">
+            <input type="submit" value="Calcular Orçamento" class="budgetButton">
+        </form>
+        <pre class="dataEntryField budgetBoard"></pre>
+    </div>
+
+    <footer class="footerContent">
+        <div class="socialMediaIcons">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <span class="copyFooter">&copy;Copyright | Bruno Gomes - 2023</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
