@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 HTML| CSS | JavaScript
   ---|---|---
-  76.2%|21.9%|1.9%
+  26.6%|51.9%|21.5%
 
 ## 💻 Projeto
 Esse é um projeto para o usuário listar as despesas do mês e realizar o cálculo para ficar sabendo se ficou positivo ou negativo.
